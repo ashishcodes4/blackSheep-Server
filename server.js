@@ -1,0 +1,13 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT ;
+
+app.get('/', (req, res) => {
+	res.send('root route');
+})
+
+
+
+app.listen(8000, ()=>{
+	console.log("server running on port 8000" );
+})
